@@ -1,0 +1,418 @@
+/* RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+body * {
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+input,
+textarea,
+select {
+  font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0px none;
+}
+select::-ms-expand {
+  display: none;
+}
+a {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+html {
+  font-size: 13px;
+}
+body {
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+b {
+  font-weight: 700;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,700");
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: url('../images/b1.jpg');
+  background-size: fill;
+}
+body {
+  background: #110725;
+  color: #e8dff6;
+  font-family: "Titillium Web", sans-serif;
+  overflow: hidden; 
+}
+h1,
+h2,
+h4,
+h6 {
+  transform: scaleY(0.9);
+}
+a {
+  color: #e8dff6;
+}
+p {
+  color: #fff;
+}
+
+
+.body-overlay {
+  font-weight: 300;
+}
+
+.container {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  height: 100%;
+}
+
+.outer-top {
+  background: #110725;
+  padding: 40px 50px;
+  height: 115px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.outer-top .aka {
+  font-size: 1.8em;
+  display: inline-block;
+  letter-spacing: 10px;
+  padding-top: 5px;
+  width: 15%;
+}
+.outer-top .aka a {
+  color: red;
+  font-weight: bold;  
+
+}
+
+
+/* menu button effect */
+
+.outer-top .btn-burger {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  right: 45px;
+}
+.outer-top .btn-burger img {
+  width: 20px;
+}
+.outer-top .btn-burger:hover {
+  box-shadow: inset -3px 5px 15px rgba(213, 78, 24, 0.1),
+    0px 0px 15px rgba(213, 78, 24, 0.2);
+  opacity: 0.5;
+}
+
+
+.leftandin {
+  width: 100%;
+  z-index: 3;
+}
+
+
+.outer-left {
+  background: #110725;
+  display: inline-block;
+  min-height: calc(100vh - 115px);
+  height: 100%;
+  padding: 45px 60px;
+  width: 20%;
+}
+
+/* written info */
+
+.outer-left .timeline {
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+  padding: 20px;
+  z-index: 1;
+
+}
+
+
+.outer-left .headline {
+  font-size: 7em;
+  font-weight: 700;
+  line-height: 90px;
+  padding: 20px 5px;
+  position: absolute;
+  width: 300px; 
+  z-index: 1;
+}
+.outer-left .title {
+  font-size: 1.7em;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 50px;
+  padding: 20px 110px;
+  position: absolute;
+  margin-top: 8.5em;
+  z-index: 1;
+}
+
+.outer-left .description {
+  font-size: 1.3em;
+  position: absolute;
+  margin-top: 15.5em;
+  padding: 0 110px;
+  z-index: 1;
+  width: 39em;
+}
+
+/* outside */
+.outer-left .cta {
+  background: #EB3349;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d57118",endColorstr="#d6003b",GradientType=1);
+  border: none;
+  border-radius: 20em;
+  box-shadow: -1px 2px 7px rgba(213, 78, 24, 0.4),
+    1px -1px 7px rgba(7, 6, 25, 0.4);
+  color: #e8dff6;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin-left: 110px;
+  margin-top: 24em;
+  padding: 0.8em 3em;
+  position: absolute;
+  text-shadow: 0px 0px 3px rgba(200, 200, 200, 0.4);
+  
+  z-index: 1;
+}
+
+
+.inner {
+  border-top-left-radius: 50vh;
+  box-shadow: inset 0 14px 5px rgba(0, 0, 0, 0.2),
+    inset 0 14px 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  min-height: calc(100vh - 115px);
+  vertical-align: top;
+  position: absolute;
+  right: 0;
+  width: 80%;
+}
+
+/* page 1 */
+
+#inner1 {
+  background: url('../images/bb9.jpg');
+  background-size: cover;
+ 
+}
+
+
+/* number arrows */
+
+
+.inner .toggler {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.inner .toggler a {
+  font-size: 3em;
+  color: #e8dff6;
+  opacity: 0.6;
+  text-align: center;
+  height: 1.8em;
+  border-radius: 10em;
+  width: 2em;
+  z-index: 2;
+}
+.inner .toggler a:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+.inner .previous-article {
+  position: absolute;
+  bottom: 8em;
+  right: 0;
+}
+.inner .next-article {
+  position: absolute;
+  bottom: 6em;
+  right: 0;
+}
+.inner .article-position {
+  color: #e8dff6;
+  font-size: 0.4em;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+
+
+/* discography */
+  
+.container2 {
+  width: 30vw;
+  height: 30vh;
+  position: relative;
+  left: 77%;
+  top: 40%;
+  transform: translate(-5%,-250%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
